@@ -1,3 +1,6 @@
+"""
+fix this, and update this
+"""
 import random
 from ursina import *
 def update():
@@ -147,4 +150,9 @@ for x in range(2):
     entity_list.append(bot)
     number += 1
 
-app.run()
+
+
+
+
+if __name__ == '__main__':
+    app.run()
