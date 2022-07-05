@@ -147,4 +147,29 @@ for x in range(2):
     entity_list.append(bot)
     number += 1
 
+# this is the bot that will be used to find the color values
+bot = Bot(R=0,G=0,B=0,position=(0,0))
+bot.enabled = False
+bot.visible = False
+bot.collider = 'box'
+bot.scale = (5,5,5)
+
+# this allows the camera to move around the scene
+camera.position = (0, 0, -10)
+camera.rotation_x = 0
+camera.rotation_y = 0
+camera.rotation_z = 0
+camera.fov = 90
+camera.orthographic = False
+camera.background_color = color.color(0,0,0,1)
+
+# this allows the user to move the camera around the scene
+input_handler.bind('w', 'up')
+input_handler.bind('s', 'down')
+input_handler.bind('a', 'left')
+input_handler.bind('d', 'right')
+input_handler.bind('e', 'forward')
+input_handler.bind('r', 'backward')
+
+
 app.run()
